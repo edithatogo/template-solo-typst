@@ -1,6 +1,6 @@
-#import "lib.typ": document
+#import "lib.typ": solo-document
 
-#show: document.with(
+#show: solo-document.with(
   title: "Replace Me",
   author: "Replace Me",
 )
