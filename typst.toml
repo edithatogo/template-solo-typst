@@ -1,0 +1,12 @@
+[package]
+name = "replace-me"
+version = "0.1.0"
+entrypoint = "lib.typ"
+authors = ["Replace Me"]
+license = "MIT"
+description = "Replace this description"
+repository = "https://github.com/edithatogo/template-solo-typst"
+
+[template]
+path = "."
+entrypoint = "main.typ"
