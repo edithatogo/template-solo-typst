@@ -1,4 +1,4 @@
-#let document(title: "Replace Me", author: "Replace Me", body) = {
+#let solo-document(title: "Replace Me", author: "Replace Me", body) = {
   set document(title: title, author: author)
   set page(paper: "a4", margin: 25mm)
   set text(font: "New Computer Modern", size: 11pt)
