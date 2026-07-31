@@ -1,7 +1,45 @@
-# Solo Typst template
+# Solo-maintainer Typst template
 
-A minimal Typst 0.15 template with checksum-verified typstyle formatting,
-immutable GitHub Actions, fail-closed compilation, PDF structural/text
-validation, and retained build artefacts.
+[![CI](../../actions/workflows/ci.yml/badge.svg)](../../actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Citation](https://img.shields.io/badge/citation-CFF-blue.svg)](CITATION.cff)
 
-Run `make verify`. Publication is intentionally not automatic.
+A Typst 0.15 baseline with checksum-verified formatting, immutable CI, and structural PDF verification.
+
+## Status
+
+This repository is designed for one maintainer. Automated checks are required;
+no second reviewer, CODEOWNERS approval, team membership, or mandatory human
+approval is introduced.
+
+## Start here
+
+1. Replace the title and author in `main.typ`.
+2. Run `make verify`.
+3. Review the generated PDF before creating a release tag.
+
+## Development
+
+CI enforces Typstyle formatting, compiles fail-closed, and validates the generated PDF with qpdf, pdfinfo, and non-empty text extraction.
+
+## Versioning
+
+`typst.toml` is authoritative for a packaged template; otherwise release tags are authoritative. Citation metadata must not duplicate an unmanaged version.
+
+## Logging
+
+Runtime logging is not applicable to a typesetting-only repository; compiler logs are retained as CI evidence.
+
+## Security
+
+Report vulnerabilities privately through GitHub Security Advisories. See
+[SECURITY.md](SECURITY.md); do not disclose credentials or sensitive source data
+in a public issue.
+
+## Citation
+
+See [CITATION.cff](CITATION.cff). Release-specific versions and identifiers are
+added only when the release exists.
+
+## License
+
+Repository-authored starter material is MIT licensed; see [LICENSE](LICENSE).
+Record third-party and source-data rights separately.
