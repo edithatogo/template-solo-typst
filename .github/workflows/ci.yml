@@ -10,4 +10,4 @@ concurrency:
   cancel-in-progress: true
 jobs:
   ci:
-    uses: edithatogo/repository-standards/.github/workflows/typst-ci.yml@7874f05132447c77f681fbca7ad5394066564aaf # main
+    uses: edithatogo/repository-standards/.github/workflows/typst-ci.yml@899c2e9af42588373ed7820810050f47e48ca8a2 # main
